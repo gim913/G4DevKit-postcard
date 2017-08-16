@@ -1,0 +1,9 @@
+{
+	"format": "Workspace",
+	"version": 1,
+	"name": "postcard",
+	"projects": [
+		".\\kernel\\kernel.apcpuprj",
+		".\\std\\std.apcpuprj"
+	]
+}

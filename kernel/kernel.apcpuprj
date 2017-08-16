@@ -1,0 +1,160 @@
+{
+	"format": "Project",
+	"version": 1,
+	"name": "kernel",
+	"type": 1,
+	"globalconfiguration": {
+		"name": "Global",
+		"includePaths": [
+
+		],
+		"defines": [
+
+		],
+		"compilerOptions": "",
+		"linkerextralibs": ""
+	},
+	"configurations": [
+		{
+			"name": "Debug",
+			"includePaths": [
+				"$(SolutionDir)",
+				"$(SolutionDir)\/kernel"
+			],
+			"defines": [
+				"DEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -g -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		},
+		{
+			"name": "Release",
+			"includePaths": [
+				"$(SolutionDir)",
+				"$(SolutionDir)\/kernel"
+			],
+			"defines": [
+				"NDEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -k -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		}
+	],
+	"dependencies": [
+		"std"
+	],
+	"files": [
+		{
+			"path": ".\\boot\\boot.asm",
+			"bootfile": true
+		},
+		{
+			"path": ".\\boot\\boot.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\clock.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\clock.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\cpu.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\cpu.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\cpu_imp.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\defines.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\hwicall.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\hwicall.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\interrupts.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\interrupts.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\kernel.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\kernel.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\kernel_temp.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\mm.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\mm.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\panic.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\panic.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\postcard.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\postcard.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\process.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\process.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\process_imp.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\rawmm.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\kernel\\rawmm.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\screen.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hardware\\screen.h",
+			"bootfile": false
+		}
+	]
+}

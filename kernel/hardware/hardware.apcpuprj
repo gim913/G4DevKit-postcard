@@ -1,0 +1,70 @@
+{
+	"format": "Project",
+	"version": 1,
+	"name": "hardware",
+	"type": 2,
+	"globalconfiguration": {
+		"name": "Global",
+		"includePaths": [
+
+		],
+		"defines": [
+
+		],
+		"compilerOptions": "",
+		"linkerextralibs": ""
+	},
+	"configurations": [
+		{
+			"name": "Debug",
+			"includePaths": [
+				"$(SolutionDir)"
+			],
+			"defines": [
+				"DEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -g -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		},
+		{
+			"name": "Release",
+			"includePaths": [
+				"$(SolutionDir)"
+			],
+			"defines": [
+				"NDEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -k -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		}
+	],
+	"dependencies": [
+
+	],
+	"files": [
+		{
+			"path": ".\\cpu.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\cpu.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hwicall.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\hwicall.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\screen.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\screen.h",
+			"bootfile": false
+		}
+	]
+}

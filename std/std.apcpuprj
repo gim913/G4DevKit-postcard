@@ -1,0 +1,90 @@
+{
+	"format": "Project",
+	"version": 1,
+	"name": "std",
+	"type": 2,
+	"globalconfiguration": {
+		"name": "Global",
+		"includePaths": [
+
+		],
+		"defines": [
+
+		],
+		"compilerOptions": "",
+		"linkerextralibs": ""
+	},
+	"configurations": [
+		{
+			"name": "Debug",
+			"includePaths": [
+
+			],
+			"defines": [
+				"DEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -g -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		},
+		{
+			"name": "Release",
+			"includePaths": [
+
+			],
+			"defines": [
+				"NDEBUG"
+			],
+			"compilerOptions": "-c99 -O2 -k -size -unroll-size=0 -dontwarn=323 -dontwarn=208 -dontwarn=153",
+			"linkerextralibs": ""
+		}
+	],
+	"dependencies": [
+
+	],
+	"files": [
+		{
+			"path": ".\\defines.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\format.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\format.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\list.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\list.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\memory.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\memory_imp.asm",
+			"bootfile": false
+		},
+		{
+			"path": ".\\stdarg.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\string.c",
+			"bootfile": false
+		},
+		{
+			"path": ".\\string.h",
+			"bootfile": false
+		},
+		{
+			"path": ".\\types.h",
+			"bootfile": false
+		}
+	]
+}
